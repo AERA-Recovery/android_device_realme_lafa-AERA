@@ -21,10 +21,10 @@ fail() {
 }
 
 case "$(getprop ro.product.device)" in
-    lafa|RMX5200|RMX5210|RE6030L1|OP60FFL1) ;;
+    lafa|RMX5200|RMX5210|RE6030L1|RE60C8L1) ;;
     *)
         case "$(getprop ro.product.vendor.device)" in
-            lafa|RMX5200|RMX5210|RE6030L1|OP60FFL1) ;;
+            lafa|RMX5200|RMX5210|RE6030L1|RE60C8L1) ;;
             *) fail "this backend is only valid on lafa/Realme GT8 Pro" ;;
         esac
         ;;
