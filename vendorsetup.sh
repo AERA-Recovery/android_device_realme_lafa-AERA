@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="infiniti"
+FDEVICE="lafa"
 
 aera_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
@@ -59,9 +59,9 @@ if [ "$1" = "$FDEVICE" -o "$AERA_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export AERA_SETTINGS_ROOT_DIRECTORY=/data/recovery
 	export AERA_MISCELLANEOUS_ROOT_DIRECTORY=/sdcard
 
-	# For OnePlus 15
-	export TARGET_DEVICE_ALT="PLK110,OP611FL1,OP60FFL1,CPH2745,CPH2747,CPH2749"
-	export AERA_TARGET_DEVICES="$TARGET_DEVICE_ALT"
+	# For Realme GT8 Pro
+	export TARGET_DEVICE_ALT="lafa"
+	export AERA_TARGET_DEVICES="RMX5200,RMX5210,RE6030L1,OP60FFL1"
 	export AERA_USE_DMSETUP=1
 	export AERA_ENABLE_KERNELSU_SUPPORT=1
 	export AERA_ENABLE_KERNELSU_NEXT_SUPPORT=1
